@@ -13,11 +13,6 @@
 - has_many :messages
 
 ## groupsテーブル
-
-|Column|Type|Options|
-|------|----|-------|
-|name|string|       |
-|message_id|integer|foreign_key: true|
 |user_id|integer|foreign_key: true|
 
 ### Association

@@ -5,7 +5,6 @@
 |name|string|null: false,
 |email|string|null: false, unique: true|
 |message_id|integer|foreign_key: true|
-foreign_key: true|
 |group_id|integer|foreign_key: true|
 
 ### Association

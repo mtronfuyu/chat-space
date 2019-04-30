@@ -42,7 +42,7 @@
 |body|text|       |
 |user_id|integer|foreign_key: true|
 |group_id|integer|foreign_key: true|
-|image|string|foreign_key: true|
+|image|string|   |
 
 ### Association
 - belongs_to :user

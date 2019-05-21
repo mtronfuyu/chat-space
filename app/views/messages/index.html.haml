@@ -1,0 +1,43 @@
+%html
+  %body
+    .wrapper
+      .header
+        グループを作成しました
+      .side-bar
+        .side-bar-header
+          %p.side-bar-header__user-name
+            test-user
+          %a(class="fas fa-edit" href="")
+          %a(class="fas fa-cog" href="")
+        .side-bar-bottom
+          .side-bar-bottom-group
+            %p.side-bar-bottom-group__name
+              sample-group
+            %p.side-bar-bottom-group__chat
+              hello!
+      .main
+        .chat-space-header
+          .header-menu
+            %p.header-menu__group
+              group1
+            %p.header-menu__menber
+              Menber: user
+          %a(class="edit-button" href="")
+            Edit
+        .main-chat
+          .main-chat-space
+            .chat-message
+              %p.chat-message__user
+                test_user
+              %p.chat-message__date
+                created_at
+            %p.main-chat-space__text
+              text 
+        %form
+          %input(class="input-text"type="text" id="message" placeholder="Type a message")
+            %label
+              %span(class="filelabel")
+              %input(class="filesend" type="file")
+                %i(class="far fa-image")
+          %input(class="button" type="submit" value="Send")
+

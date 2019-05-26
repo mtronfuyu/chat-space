@@ -32,11 +32,10 @@
             created_at
         %p.main-chat-space__text
           text 
-    %form
-      %input(class="input-text"type="text" id="message" placeholder="Type a message")
+    %form.input-message
+      %input#message.input-text{type: "text", placeholder: "Type a message"}
         %label
-          %span(class="filelabel")
-          %input(class="filesend" type="file")
-            %i(class="far fa-image")
-      %input(class="button" type="submit" value="Send")
-
+          %span.filelabel
+          %input.filesend{type: "file"}
+            %i.far.fa-image
+      %input.button{type: 'submit', value: 'Send'}

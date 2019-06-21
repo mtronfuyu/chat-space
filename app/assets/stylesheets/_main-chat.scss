@@ -1,0 +1,31 @@
+.main-chat {
+  width: calc(100% - 300px);
+  height: 100vh;
+  background-color: #fafafa;
+  float: right;
+  word-break: break-all;
+  padding-top: 118px;
+  box-sizing: border-box;
+  .main-chat-space {
+    .chat-message {
+      padding: 46px 40px 0 40px;
+      display: flex;
+      &__user {
+        height: 100%;
+        padding: 0 10px 0 0;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      &__date {
+        font-size: 12px;
+        color: #999999;
+        height: 100%;
+      }
+    }
+    &__text {
+      font-size: 15px;
+      padding: 10px 40px;
+    }
+  }
+} 
+

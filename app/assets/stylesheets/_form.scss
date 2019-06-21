@@ -1,0 +1,38 @@
+.input-message {
+  background-color: #eeeeee;
+  width: calc(100% - 300px);
+  padding: 10px 40px 10px 40px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  .input-text {
+    width: 80%;
+    padding-left: 10px;
+    color: #434A54;
+    height: 50px;
+    margin-right: 25px;
+    font-size: 16px;
+  }
+  .filesend {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+  i {
+    position: absolute;
+    z-index: 2;
+    top: 25px;
+    right: 225px;
+    font-size: 25px;
+    width: 25px;
+    
+  }
+  .button {
+    background-color: #38AEF0;
+    color: $colorWhite;
+    padding: 10px 40px;
+  }
+}

@@ -1,0 +1,41 @@
+.wrapper
+  .header
+    グループを作成しました
+  .side-bar
+    .side-bar-header
+      %p.side-bar-header__user-name
+        test-user
+      = link_to do
+        %i.far.fa-edit
+      = link_to do
+        %i.fas.fa-cog
+    .side-bar-bottom
+      .side-bar-bottom-group
+        %p.side-bar-bottom-group__name
+          sample-group
+        %p.side-bar-bottom-group__chat
+          hello!
+  .main
+    .chat-space-header
+      .header-menu
+        %p.header-menu__group
+          group1
+        %p.header-menu__menber
+          Menber: user
+      = link_to "Edit",  "" , class: 'edit-button'
+    .main-chat
+      .main-chat-space
+        .chat-message
+          %p.chat-message__user
+            test_user
+          %p.chat-message__date
+            created_at
+        %p.main-chat-space__text
+          text 
+    %form.input-message
+      %input#message.input-text{type: "text", placeholder: "Type a message"}
+        %label
+          %span.filelabel
+          %input.filesend{type: "file"}
+            %i.far.fa-image
+      %input.button{type: 'submit', value: 'Send'}
